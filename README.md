@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# Проект шахматы.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Добро пожаловать в репозиторий моего пет-проекта "Шахматы"! Этот проект создан в образовательных целях для изучения технологий React, TypeScript. Давайте рассмотрим основные аспекты этого проекта.
 
-Currently, two official plugins are available:
+### Описание проекта
+Этот пет-проект представляет собой простые шахматы, который разработан с использованием следующих технологий и библиотек:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**React:** Библиотека, которая позволяет создавать компоненты и строить пользовательские интерфейсы.
 
-## Expanding the ESLint configuration
+**TypeScript:** Добавление типизации в JS.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Установка и запуск
+Убедитесь, что у вас установлен Node.js.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+**Клонируйте этот репозиторий на свой локальный компьютер:**
+```
+git clone https://github.com/NewZaikaM/online-store.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Перейдите в директорию проекта:**
+```
+cd chess
+```
+
+**Установите зависимости:**
+```
+npm install
+```
+
+**Запустите локальный сервер разработки:**
+```
+npm run dev
+```
+
+После завершения этих шагов, ваше приложение будет доступно по адресу http://localhost:5173.
+
+### Структура проекта
+- src/: Исходный код пет-проекта.
+  - assets/: Дополнительные файлы необходимы для интерфейса(в данном случае изображения фигур).
+  - components/: Компоненты React, используемые в приложении.
+  - models/: Классовое предоставление всех сущностей приложения.
+  - App.tsx/: Основной компонент приложения.
+  - App.css/: Основной стили приложения.
+  - main.ts: Точка входа в приложение.
+
+### Вклад
+Этот пет-проект создан с целью обучения и практики. Если у вас есть какие-либо предложения, улучшения или исправления, не стесняйтесь создавать пул-реквесты. Буду рад любому вкладу!
+
+Лицензия
+Этот проект распространяется под лицензией MIT, что позволяет свободное использование, модификацию и распространение кода.
+
+Благодарим вас за интерес к моему пет-проекту! Надеюсь, что он будет полезен для вашего обучения и развития навыков в разработке. Удачи!
